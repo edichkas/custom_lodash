@@ -1,9 +1,3 @@
-/*
-var object = { 'a': 1, 'b': '2', 'c': 3 };
- 
-_.pickBy(object, _.isNumber);
-// => { 'a': 1, 'c': 3 }
-*/
 const pickBy = require('../../src/objects/pickBy');
 
 var object = { 'a': 1, 'b': '2', 'c': 3 };
