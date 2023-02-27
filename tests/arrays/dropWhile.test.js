@@ -33,3 +33,7 @@ test('test of "dropWhile" function', () => {
     expect(dropWhile(users, function (o) { return !o.active; })).toStrictEqual([{ 'user': 'barney', 'active': false },
     { 'user': 'fred', 'active': false }]);
 });
+
+test('test of "dropWhile" function matches itaratee', () => {
+  expect(dropWhile(users, { 'user': 'barney', 'active': false })).toStrictEqual(['fred', 'pebbles']);
+});
