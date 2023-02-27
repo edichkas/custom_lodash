@@ -1,17 +1,4 @@
 const drop = require('../../src/arrays/drop');
-/*
-_.drop([1, 2, 3]);
-// => [2, 3]
- 
-_.drop([1, 2, 3], 2);
-// => [3]
- 
-_.drop([1, 2, 3], 5);
-// => []
- 
-_.drop([1, 2, 3], 0);
-// => [1, 2, 3]
-*/
 
 test('with default value of n', () => {
     expect(drop([1, 2, 3])).toStrictEqual([2, 3]);

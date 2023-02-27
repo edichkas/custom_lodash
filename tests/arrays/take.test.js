@@ -1,16 +1,3 @@
-/*
-_.take([1, 2, 3]);
-// => [1]
- 
-_.take([1, 2, 3], 2);
-// => [1, 2]
- 
-_.take([1, 2, 3], 5);
-// => [1, 2, 3]
- 
-_.take([1, 2, 3], 0);
-// => []
-*/
 const take = require('../../src/arrays/take');
 
 test('test of "take" function w/o param', () => {
