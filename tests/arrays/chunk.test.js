@@ -1,15 +1,11 @@
-/*
-_.chunk(['a', 'b', 'c', 'd'], 2);
-// => [['a', 'b'], ['c', 'd']]
- 
-_.chunk(['a', 'b', 'c', 'd'], 3);
-// => [['a', 'b', 'c'], ['d']]
-*/
-
 const chunk = require('../../src/arrays/chunk');
 
-test(`array ['a', 'b', 'c', 'd'] is chunked into [[1, 2], [3, 4], [5]]`, () => {
+test(`array ['a', 'b', 'c', 'd'] is chunked by 2`, () => {
     expect(chunk(['a', 'b', 'c', 'd'], 2)).toStrictEqual([['a', 'b'], ['c', 'd']]);
+});
+
+test(`array ['a', 'b', 'c', 'd'] is chunked by 3`, () => {
+    expect(chunk(['a', 'b', 'c', 'd'], 3)).toStrictEqual([['a', 'b', 'c'], ['d']]);
 });
 
 test('chunk empty array', () => {
