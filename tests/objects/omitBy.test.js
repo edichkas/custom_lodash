@@ -1,10 +1,3 @@
-
-/*
-var object = { 'a': 1, 'b': '2', 'c': 3 };
- 
-_.omitBy(object, _.isNumber);
-// => { 'b': '2' }
-*/
 const omitBy = require('../../src/objects/omitBy');
 
 var object = { 'a': 1, 'b': '2', 'c': 3 };
