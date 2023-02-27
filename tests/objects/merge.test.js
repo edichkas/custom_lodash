@@ -13,7 +13,8 @@ _.merge(object, other);
 
 const merge = require('../../src/objects/merge');
 
-var object = { 'a': 1, 'b': '2', 'c': 3 };
+var object = { 'a': [{ 'b': 2 }, { 'd': 4 }] };
+var other = { 'a': [{ 'c': 3 }, { 'e': 5 }] };
 test('test for merge function', () => {
-    expect(merge(object, ['a', 'c'])).toStrictEqual(null);
+  expect(merge(object, other)).toStrictEqual({ 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] });
 });

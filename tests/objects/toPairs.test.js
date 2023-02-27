@@ -14,5 +14,5 @@ const toPairs = require('../../src/objects/toPairs');
 
 var object = { 'a': 1, 'b': '2', 'c': 3 };
 test('test for toPairs function', () => {
-    expect(toPairs(object, ['a', 'c'])).toStrictEqual(null);
+    expect(toPairs(object, ['a', 'c'])).toStrictEqual([['a', 1], ['b', 2]]);
 });
