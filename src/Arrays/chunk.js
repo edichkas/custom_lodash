@@ -1,7 +1,7 @@
 
 // Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements.
 const length = require("../helpers/length");
-
+const push = require("../helpers/push");
 
 function chunk(array, size = 1) {
   let l = length(array);
@@ -11,7 +11,7 @@ function chunk(array, size = 1) {
     let index = i % size;
     innerArr[index] = array[i];
     if (index === size - 1 || i === l - 1) {
-      result = (result, innerArr)=>[...result, innerArr];
+      result = push(result, innerArr);
       innerArr = [];
       outerIndex++;
     }

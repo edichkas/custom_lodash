@@ -1,4 +1,4 @@
-//
+// Creates an object composed of the picked object properties.
 const length = require('../helpers/length');
 
 function pick(obj, array) {

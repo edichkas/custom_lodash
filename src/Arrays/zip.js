@@ -3,7 +3,7 @@
 
 const length = require('../helpers/length');
 const push = require('../helpers/push');
-const chunk = require('./chunck');
+const chunk = require('./chunk');
 
 function zip(...arrays) {
   let lOuter = length(arrays);
@@ -16,6 +16,5 @@ function zip(...arrays) {
   }
   return result;
 }
-
 
 module.exports = zip;
